@@ -3,58 +3,66 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
-          rel="stylesheet">
 
+  </head>
+  <body>
+    <div id="content">
+      <table id="table-id" class="sort">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>By</th>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>Result</th>
+            <th>Attributes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Biggest Spender</td>
+            <td class="text-left">the top 1% of customers by avg yearly expenditures</td>
+            <td>President Barack Obama</td>
+            <td>10/11/1969</td>
+            <td>5 min</td>
+            <td>3134 rows</td>
+            <td>Customer ID</td>
+          </tr>
+          <tr>
+            <td>Most Popular Items</td>
+            <td class="text-left">the 200 items purchased the most times in the past year</td>
+            <td>Oprah</td>
+            <td>1/1/2013</td>
+            <td>2 min</td>
+            <td>200 rows</td>
+            <td>Product</td>
+          </tr>
+          <tr>
+            <td>Least Popular Items</td>
+            <td class="text-left">the 200 items purchased the least times in the past year</td>
+            <td>Al Gore</td>
+            <td>12/8/2013</td>
+            <td>2 min</td>
+            <td>200 rows</td>
+            <td>Product</td>
+          </tr>
+          <tr>
+            <td>Seasonal Goods</td>
+            <td class="text-left">items which are purchased 5x as
+            often in winter as in summer</td>
+            <td>Martha Stewart</td>
+            <td>11/8/2010</td>
+            <td>20 min</td>
+            <td>120 rows</td>
+            <td>Product</td>
+          </tr>
+        </tbody>
+      </table>
     <script src="tablesort.min.js"></script>
     <script>
       new Tablesort(document.getElementById('table-id'));
     </script>
-  </head>
-  <body>
-    <div>
-      <table id="table-id">
-      </table>
-
-      <!-- <div class="span12"> -->
-      <!--   <table class="table table-bordered"> -->
-      <!--     <thead> -->
-      <!--       <tr> -->
-      <!--         <th rowspan="2">Attribute</th> -->
-      <!--         <th colspan="3">Features</th> -->
-      <!--         <th colspan="3">Sample Values</th> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <th>Entity Type</th> -->
-      <!--         <th>Physical Type</th> -->
-      <!--         <th>Data Type</th> -->
-      <!--       </tr> -->
-      <!--     </thead> -->
-      <!--     <tbody> -->
-      <!--       <tr> -->
-      <!--         <td>Month</td> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <td>Day</td> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <td>Year</td> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <td>Customer ID</td> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <td>Product</td> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <td>Quantity</td> -->
-      <!--       </tr> -->
-      <!--       <tr> -->
-      <!--         <td>Channel</td> -->
-      <!--       </tr> -->
-      <!--     </tbody> -->
-      <!--   </table> -->
-      <!-- </div> -->
 
     </div>
   </body>
