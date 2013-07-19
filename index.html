@@ -2,16 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+         href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
     <link rel="stylesheet" href="style.css">
-
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   </head>
   <body>
     <div id="content">
       <table id="table-id" class="sort">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Description</th>
+            <th title="Name tooltip">Name</th>
+            <th title="Description tooltip">Description</th>
             <th>By</th>
             <th>Date</th>
             <th>Duration</th>
@@ -25,7 +28,7 @@
             <td class="text-left">the top 1% of customers by avg yearly expenditures</td>
             <td>President Barack Obama</td>
             <td>10/11/1969</td>
-            <td>5 min</td>
+            <td> 5 mins </td>
             <td>3134 rows</td>
             <td>Customer ID</td>
           </tr>
@@ -34,7 +37,7 @@
             <td class="text-left">the 200 items purchased the most times in the past year</td>
             <td>Oprah</td>
             <td>1/1/2013</td>
-            <td>2 min</td>
+            <td>2 mins</td>
             <td>200 rows</td>
             <td>Product</td>
           </tr>
@@ -43,7 +46,7 @@
             <td class="text-left">the 200 items purchased the least times in the past year</td>
             <td>Al Gore</td>
             <td>12/8/2013</td>
-            <td>2 min</td>
+            <td>2 mins</td>
             <td>200 rows</td>
             <td>Product</td>
           </tr>
@@ -53,7 +56,7 @@
             often in winter as in summer</td>
             <td>Martha Stewart</td>
             <td>11/8/2010</td>
-            <td>20 min</td>
+            <td>20 mins</td>
             <td>120 rows</td>
             <td>Product</td>
           </tr>
@@ -63,7 +66,11 @@
     <script>
       new Tablesort(document.getElementById('table-id'));
     </script>
-
+    <script>
+      $(function() {
+      $(document).tooltip();
+      });
+    </script>
     </div>
   </body>
 </html>
